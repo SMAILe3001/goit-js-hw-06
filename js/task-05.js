@@ -5,5 +5,5 @@ const refs = {
 
 refs.nameInputEl.addEventListener(
 	"input",
-	f => (refs.nameOutputEl.textContent = f.currentTarget.value ? f.currentTarget.value : "Anonymous"),
+	f => (refs.nameOutputEl.textContent = f.currentTarget.value.trim() ? f.currentTarget.value : "Anonymous"),
 );
